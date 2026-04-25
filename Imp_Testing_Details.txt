@@ -1,0 +1,41 @@
+dataset has 3 directories test train val
+test->NORMAL 234/ PNEUMONIA 390
+train-> NORMAL 1341/ PNEUMONIA 3875
+val-> NORMAL 8/ PNEUMONIA 8
+
+
+### Dataset division is Bad as Validation has only 8 sample each. 
+### Therefore Overfitting and early stopping couldn't be applied as Val data would give arbitrary Noise.
+
+
+## Testing Different Image input size and batch sizes
+64 batch size
+20 epochs
+150*150 input size
+Test Accuracy: 0.916666686534881 
+
+64 batch size
+20 epochs
+512*512 image size
+Text Accuracy: 0.8477563858032227 
+
+32 batch size
+50 epochs
+150*150 input size
+Test Accuracy:  0.9022436141967773 
+
+64 batch size
+50 epochs
+150*150 input size
+Test Accuracy:  0.8974359035491943 
+
+32 batch size
+30 epochs
+224*224 image size
+Test Accuracy: 0.8942307829856873 
+
+64 batch size
+30 epochs
+224*224 image size
+Test Accuracy: 0.9294871687889099 
+
